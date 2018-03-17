@@ -3,12 +3,14 @@
 
 int main(void)
 {
-    //get height
-    int height = get_int("Specify the height of your pyramide: \n");
-    while (height > 23 || height < 0)
+    //initialize height variable
+    int height;
+    //get height with do while
+    do
     {
         height = get_int("Specify the height of your pyramide: \n");
     }
+    while (height > 23 || height < 0)
     //first loop to iterate over all rows
     for (int i = 0; i < height; i++)
     {
